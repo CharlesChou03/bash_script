@@ -87,5 +87,5 @@ cp -r ./* ~/go/src/$path
 rm ~/go/src/$path/initGo.sh
 
 cd ~/go/src/$path/
-sed -i '' "s/testmodule/$REPO/g" ./go.mod ./services/* ./internal/handlers/* ./main.go
+sed -i '' "s/testmodule/$REPO/g" ./go.mod ./internal/handlers/* ./main.go
 go run main.go
